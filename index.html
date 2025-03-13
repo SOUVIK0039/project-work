@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Tour</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #ff7043;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffe0b2;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem;
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0.8rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #2a0404;
+        }
+        .card h3 {
+            margin: 1rem;
+            font-size: 1.5rem;
+            color: #ff5722;
+        }
+        .card p {
+            margin: 0 1rem 1rem;
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Kitchen Tour </h1>
+        <p>Your ultimate destination for tasty recipes and food inspiration</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Kitchen Tour</h1>
+        <p>Discover the joy of cooking with our curated recipes</p>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlu5r5MBwU3bXCtpXv0AaQgdif_V8ibpvBCeA63XwQr_Rl3UODnciJfDbeap4akTe84rnNABtm5oK64kltNIwj3LTRcLRHIXCydF4qAw" alt="Spaghetti Carbonara">
+            <h3>Spaghetti Carbonara</h3>
+            <p>A quick and creamy Italian classic.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.thetakeiteasychef.com/wp-content/uploads/2017/01/Garlic-Chicken-Thumbnail.jpg" alt="Grilled Chicken">
+            <h3>Grilled Chicken</h3>
+            <p>Perfectly juicy and seasoned to perfection.</p>
+        </div>
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/05c508_32d28fe292de43808b9e5394741de406~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/05c508_32d28fe292de43808b9e5394741de406~mv2.jpg" alt="Byriani">
+            <h3>Byriani</h3>
+            <p>Dhaba-Style Chicken Biryani </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
